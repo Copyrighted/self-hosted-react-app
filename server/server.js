@@ -8,7 +8,8 @@ app.get('*', (res, req) => {
   res.sendFile(path.join(publicPath, 'index.html'));
 })
 app.post('/', function requestHandler(req, res) {
-    res.end('You made a post request to your command and contol server. Beep boop!');
+    res.end('You made a post request to your command and contol server. Beep boop! \n' +
+  console.log(res));
 });
 
 //const server = await app.listen(${port})
