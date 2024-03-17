@@ -7,4 +7,12 @@ app.use(express.static(publicPath));
 app.get('*', (res, req) => {
   res.sendFile(path.join(publicPath, 'index.html'));
 })
+app.post('/', function requestHandler(req, res) {
+    res.end('You made a post request to your command and contol server. Beep boop!');
+});
+
+const server = await app.listen(${port})
+
 app.listen(port, () => console.log(`App listening at port: ${port}`));
+
+
