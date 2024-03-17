@@ -11,7 +11,7 @@ app.post('/', function requestHandler(req, res) {
     res.end('You made a post request to your command and contol server. Beep boop!');
 });
 
-const server = await app.listen(${port})
+//const server = await app.listen(${port})
 
 app.listen(port, () => console.log(`App listening at port: ${port}`));
 
